@@ -20,21 +20,40 @@ abstract class bank{
 		wit=a;
 	}
 
-	abstract void cal();
+	abstract int cal();
 }
 
 class sbi extends bank
 {
-	void cal()
+	sbi()
+	{
+		super();
+	}
+	int cal()
 	{
 		bal=bal+dep-wit;
+
+		return bal;
 	}
 }
 
-public class bal{
+public class B{
 
 	public static void main(String[] args)
 	{
-		
+		Scanner in=new Scanner(System.in);
+
+		sbi s=new sbi();
+		System.out.println("Enter the deposit amount:");
+		int a=in.nextInt();
+		s.depo(a);
+
+		System.out.println("Enter the withdrawl amount:");
+		int b=in.nextInt();
+		s.with(b);
+
+		System.out.println("Your balance is: Rs." + s.cal() + ".00/- only");
+
+
 	}
 }
