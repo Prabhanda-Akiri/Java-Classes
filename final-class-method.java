@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 final class a extends b
 {
@@ -40,7 +39,7 @@ public class E
     {
        a ob=new a(4,3);
        
-       System.out.println("product from normal method in final class: " + ob.mul() );
-       System.out.println("sum from final method in normal class: " + ob.add());
+       System.out.println("product of 3,4 from normal method in final class: " + ob.mul() );
+       System.out.println("sum of 3,4 from final method in normal class: " + ob.add());
     }
 }
